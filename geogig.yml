@@ -1,4 +1,4 @@
-version: '34'
+version: '3.4'
 services:
   db:
     image: kartoza/postgis:9.5-2.2
