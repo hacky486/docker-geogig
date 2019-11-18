@@ -14,9 +14,9 @@ services:
         constraints: [node.hostname == 	geo]      
     environment:
       - ALLOW_IP_RANGE=0.0.0.0/0
-      - POSTGRES_USER=aggregate
-      - POSTGRES_PASS=stargate
-      - POSTGRES_DBNAME=aggregate
+      - POSTGRES_USER=docker
+      - POSTGRES_PASS=docker
+      - POSTGRES_DBNAME=gis
     volumes:
       - postgis_geogig:/var/lib/postgresql
   geogig:
