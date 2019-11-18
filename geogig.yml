@@ -40,6 +40,8 @@ services:
     volumes:
       - /home/cbean/fs01/gis/geogig:/geogig_repo/gis
       - ${HOME}:/home/${USER}
+    depends_on:
+      - db
 networks:
   proxy:
     driver: overlay
